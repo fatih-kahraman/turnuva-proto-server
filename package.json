@@ -1,0 +1,21 @@
+{
+  "name": "turnuva-proto-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fatih-kahraman/turnuva-proto-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fatih-kahraman/turnuva-proto-server/issues"
+  },
+  "homepage": "https://github.com/fatih-kahraman/turnuva-proto-server#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.14.2"
+  }
+}
