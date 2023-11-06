@@ -2,12 +2,10 @@
   "name": "turnuva-proto-server",
   "version": "1.0.0",
   "description": "",
-  "main": "./server/index.js",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "build-frontend": "cd client && yarn && yarn build",
-    "start-server": "cd server && yarn && yarn start",
-    "start": "yarn build-frontend && yarn start-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/fatih-kahraman/turnuva-proto-server/issues"
   },
-  "homepage": "https://github.com/fatih-kahraman/turnuva-proto-server#readme"
+  "homepage": "https://github.com/fatih-kahraman/turnuva-proto-server#readme",
+  "dependencies": {
+    "cookie-session": "^2.0.0",
+    "express": "^4.18.2",
+    "ws": "^8.14.2"
+  }
 }
