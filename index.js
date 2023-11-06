@@ -10,8 +10,9 @@ app.use(cookieSession({ secret: 'manny is cool' }));
 const activeSessions = [];
 
 app.get('/', (req, res) => {
-	if (!req.session.key) {
-		const sessionKey = Date.now().toString();
+	let sessionKey = req.session?.key;
+	if (!sessionKey) {
+		sessionKey = Date.now().toString();
 		req.session.key = sessionKey
 		activeSessions.push(sessionKey);
 	}
